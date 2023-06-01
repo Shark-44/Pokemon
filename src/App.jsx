@@ -4,7 +4,7 @@ function App() {
   return(
     <div>
       <PokemonCard />
-    </div>
+     </div>
   );
 }
 export default App;
