@@ -49,11 +49,9 @@ function App() {
   const handleClickM = () => {
     setCount(pokemonIndex - 1)}
    
-  useEffect(() =>  {
-      if (pokemonIndex === 3) {
+   if (pokemonIndex === 3) {
         alert('pika pikachu !!!');}
-        },
-       [pokemonIndex]);
+   
  
   return(
     <>
