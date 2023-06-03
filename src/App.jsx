@@ -1,7 +1,7 @@
 import PokemonCard from "./components/PokemonCard"
 import { useState } from "react";
 import Navbar from "./Navbar"
-
+import { useEffect } from 'react';
 const pokemonList = [
      {
         name: "bulbasaur",
@@ -28,14 +28,32 @@ const pokemonList = [
       },
     ];
 function App() {
+          
+  useEffect(
+
+    () =>  {
+      alert("hello pokemon trainer :)");
+     
+    }, 
+    []
+ );
+
+
+
+
   const [pokemonIndex, setCount] = useState(0);
 
   const handleClickS = () => {
-  setCount(pokemonIndex + 1)
-}
+  setCount(pokemonIndex + 1)}
+
   const handleClickM = () => {
     setCount(pokemonIndex - 1)}
-
+   
+  useEffect(() =>  {
+      if (pokemonIndex === 3) {
+        alert('pika pikachu !!!');}
+        },
+       [pokemonIndex]);
  
   return(
     <>
